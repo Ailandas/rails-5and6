@@ -1,0 +1,23 @@
+<div class="register-container">
+<form method="post" action="../user/atnaujinti">
+  <div class="container">
+    <h1>Vartotojo panelė</h1>
+    <p>Keisti slaptažodį</p>
+    <hr>
+
+    <label for="oldPassword"><b>Senas slaptažodis</b></label>
+    <input type="password" placeholder="Įveskite seną slaptažodį" name="user[oldPassword]" id="email" required>
+    
+    <label for="psw"><b>Naujas slaptažodis</b></label>
+    <input type="password" placeholder="Įveskite naują slaptažodį" name="user[newPassword]" id="psw" required>
+
+    <button type="submit" class="registerbtn">Keisti informacija</button>
+  </div>
+
+  <div id="container-message">
+  <%= @msg %>
+  </div>
+</form>
+</div>
+<form method="POST" action="../user/atsijungti"><button type="submit" id="logoff">Atsijungti</button></form>
+      

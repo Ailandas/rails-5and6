@@ -1,0 +1,113 @@
+<!--<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyRailsApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
+-->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<title>hello</title>
+
+<%= csrf_meta_tags %>
+
+<%= csp_meta_tag %>
+
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+</head>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<body>
+
+<div class="w3-bar w3-black">
+  <a href="../shop/namai" class="w3-bar-item w3-button">Namai</a>
+  <a href="../shop/stacionarus" class="w3-bar-item w3-button">Stacionarus kompiuteriai</a>
+  <a href="../shop/nesiojami" class="w3-bar-item w3-button">Nesiojami kompiuteriai</a>
+  <a href="../shop/items" class="w3-bar-item w3-button">Visos prekes</a>
+  <a href="../user/naudotojas" class="w3-bar-item w3-button" id="account"> Paskyra</a>
+</div>
+
+<%= yield %>
+
+
+
+<footer class="footer-distributed">
+ 
+		<div class="footer-left">
+ 
+		<h3>Elektronikos<span>parduotuvė</span></h3>
+ 
+		<p class="footer-links">
+		<a href="../shop/namai">Namai</a>
+	·
+		<a href="../shop/stacionarus">Stacionarus</a>
+	·
+		<a href="../shop/nesiojami">Nesiojami</a>
+	·
+		<a href="../shop/items">Visi</a>
+    <a href="#">Apie</a>
+    <a href="#">DUK</a>
+	·
+		</p>
+ 
+		<p class="footer-company-name">Ailandas Eidintas PI18A &copy; 2020</p>
+		</div>
+ 
+		<div class="footer-center">
+ 
+		<div>
+		<i class="fa fa-map-marker"></i>
+		<p><span>Verkių barakas</span> Vilnius, Lietuva</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-phone"></i>
+		<p>86 00 00 000</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-envelope"></i>
+		<p><a href="mailto:support@company.com">s035009@ad.viko.lt</a></p>
+		</div>
+ 
+		</div>
+ 
+		<div class="footer-right">
+ 
+		<p class="footer-company-about">
+		<span>Apie parduotuvę</span>
+	  Kurta mokymosi tikslais
+		</p>
+ 
+		<div class="footer-icons">
+ 
+		<a href="#"><i class="fa fa-facebook"></i></a>
+		<a href="#"><i class="fa fa-twitter"></i></a>
+		<a href="#"><i class="fa fa-linkedin"></i></a>
+		<a href="#"><i class="fa fa-github"></i></a>
+ 
+		</div>
+ 
+		</div>
+ 
+		</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+
+<div class="filter">Filter of items/ yet to come</div>
+<div class="inline">
+<% for i in 0..@Items.size-1 do %>
+    <div class="w3-card-4">
+    <%=if i%2==0 then image_tag("personal.png") else image_tag("laptop.png") end%>
+     <div class="w3-container w3-center">
+    <%= @Items[i] %>
+    </div>
+    </div>
+    <% end %>
+    </div>

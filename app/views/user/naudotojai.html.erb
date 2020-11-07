@@ -1,0 +1,28 @@
+<h1>Admino panelė</h1>
+<h2>Naudotojai</h2>
+<div class="search"> 
+<form id="searchform" method="get" action="../user/getuser">
+<label>Iveskite ieskoma pasta</label>
+<input type="text" name="search_email">
+<button type="submit">Paieska</button>
+</form>
+</div>
+<div class="inline">
+    <%= for i in 0..@users.size-1 do %>
+    <form action="../user/trinti" method="post">
+    <button type="submit">
+    <input type="hidden" name="deletable_user_id" value=<%=@users[i]['id']%>> 
+    <div class="w3-card-4">
+        <%= image_tag("person-icon.jpg") %>
+        <div class="w3-container w3-center">
+        <%= @users[i]['email'] %>
+        <%= if @users[i]['userType']==0 then "-user" else "-admin" end %>
+        </div>
+    </div>
+    </button>
+    </form>
+    <p id="hidden"><% end %></p>
+</div>
+<%= @msg %>
+<form method="POST" action="../user/atsijungti"><button type="submit" id="logoff">Atsijungti</button></form>
+      

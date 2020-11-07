@@ -1,0 +1,15 @@
+Asus ZenBook 14,0
+Lenovo Thinkpad T495S,0
+Asus TUF FX505DT-BQ068,0
+Lenovo C340-14API 81N6004DPB,0
+Asus E203NA-FD084TS,0
+Lenovo IdePad Slim 1,0
+Lenovo V15,0
+Acer Predator Triton 500,0
+MasterRace Morde A320,1
+Black knight GTX,1
+Dell Precision T3630,1
+HP Pavilion TG01-0004ng,1
+Dell OptiPlex 3070,1
+MSI MAG Meta 5,1
+HP ProDesk 400

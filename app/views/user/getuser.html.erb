@@ -1,0 +1,29 @@
+
+ <div class="register-container">
+<form>
+  <div class="container">
+    <h1>Vartotojo paieška </h1>
+    <p>Vartotojas- <%=@userData['id']%></p>
+    <hr>
+    <div id="response">
+    <label for="email"><b>Sukurimo data</b></label>
+    <input type="text" id="email" value=<%=@userData['created_at']%> >
+
+    <label for="email"><b>Atnaujinimo data</b></label>
+    <input type="text" id="email" value=<%=@userData['updated_at']%> >
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" name="user[email]" id="email" value=<%=@userData['email']%> >
+
+    <label for="psw"><b>Password</b></label>
+    <input type="text" name="user[password1]" id="psw" value=<%=@userData['password']%> >
+    </div>
+    <hr>
+
+  
+  </div>
+  <div id="container-message">
+  <%= @msg %>
+  </div>
+</form>
+</div>
